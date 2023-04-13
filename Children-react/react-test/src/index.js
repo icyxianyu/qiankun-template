@@ -24,15 +24,17 @@ if (!window.__POWERED_BY_QIANKUN__) {
 }
 // lifecycle => 初始化
 export async function bootstrap(props) {
-  // console.log(props)
+  console.log('[react16] react app bootstraped')
 }
 
 // lifecycle => 挂载
 export async function mount(props) {
+  console.log('[react16] props from main framework')
   createRoot(props);
 }
 
 // lifecycle => 卸载
 export async function unmount(_props) {
+  console.log('[react16] react app unmount')
   root.unmount();
 }

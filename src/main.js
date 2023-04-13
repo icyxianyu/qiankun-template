@@ -5,7 +5,9 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import {registerMicroApps, start} from "qiankun"
 import micro from "./micro"
-createApp(App).use(ElementPlus).use(router).mount('#app')
+import store from './store'
+
+createApp(App).use(ElementPlus).use(router).use(store).mount('#app')
 
 registerMicroApps(micro)
 start();

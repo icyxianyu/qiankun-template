@@ -2,9 +2,10 @@ const { name } = require('./package');
 
 module.exports = {
 
-  publicPath:'http://localhost:8081/',
+  publicPath:'http://localhost:3000/',
 
   webpack: (config) => {
+    config.output.publicPath = 'http://localhost:3000/';
     config.output.library = `${name}-[name]`;
     config.output.libraryTarget = 'umd';
     // config.output.jsonpFunction = `webpackJsonp_${name}`;

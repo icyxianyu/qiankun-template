@@ -1,10 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import {useEffect} from "react"
+
 function App() {
-    useEffect(()=>{
-      console.log("react正常启用")
-    },[])
   return (
     <div className="App">
       <header className="App-header">
